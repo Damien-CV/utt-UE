@@ -1,0 +1,17 @@
+\begin{tikzpicture}[remember picture,overlay]
+
+% UTT Background under the title and info box
+\coordinate [right=9mm, below=10mm] (uttbackground_anchor) at (current page.north west);
+\node [name=uttsquare,
+anchor=north west
+] at (uttbackground_anchor){
+\includegraphics[width=19.4cm, height=17cm]{first-page-background.png}};
+
+% Logo UTT
+\coordinate [left=-13mm, below=-15mm] (uttlogo_anchor) at (current page.south west);
+\node [name=uttlogo,
+anchor=south west,
+] at (uttlogo_anchor){
+\includegraphics[width=5.5cm]{UTT.eps}};
+
+\end{tikzpicture}

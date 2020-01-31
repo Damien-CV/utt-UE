@@ -1,0 +1,55 @@
+\begin{titlepage}.
+    \input{lib/overlay.tikz}
+
+    \definecolor{uttBlue}{RGB}{0,0,102}
+    \definecolor{uttGrey}{RGB}{128,128,128}
+
+    % Margin to begin the text under the uttsquare
+    \vspace{2.5cm}
+
+    % Title
+    \begin{textblock*}{19cm}(1cm,18.5cm)
+        \begin{Huge}
+            \begin{flushright}
+                \makeatletter
+                \noindent\fontsize{24}{60}\selectfont \textbf{\textcolor{uttBlue}{\@title}}
+                \makeatother
+            \end{flushright}
+        \end{Huge}
+    \end{textblock*}
+    
+    % Subtitle
+    \begin{textblock*}{19cm}(1cm,19.5cm)
+        \begin{Huge}
+            \begin{flushright}
+                \makeatletter
+                \noindent\fontsize{12}{60}\selectfont\textcolor{uttGrey}{\@subtitle}
+                \makeatother
+            \end{flushright}
+        \end{Huge}
+    \end{textblock*}
+    
+    % Author
+    \begin{textblock*}{19cm}(1cm,21cm)
+        \begin{Huge}
+            \begin{flushright}
+                \makeatletter
+                \noindent\fontsize{11}{60}\selectfont \textbf{\textcolor{uttBlue}{\@author}}
+                \makeatother
+            \end{flushright}
+        \end{Huge}
+    \end{textblock*}
+    
+     % Semester
+    \begin{textblock*}{19cm}(1cm,21.5cm)
+        \begin{Huge}
+            \begin{flushright}
+                \makeatletter
+                \noindent\fontsize{11}{60}\selectfont \textcolor{uttGrey}{\@semester}
+                \makeatother
+            \end{flushright}
+        \end{Huge}
+    \end{textblock*}
+
+    
+\end{titlepage}
